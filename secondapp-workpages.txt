@@ -1,0 +1,75 @@
+import { StatusBar } from 'expo-status-bar';
+import { useState } from 'react';
+import { Button, StyleSheet, Text, View } from 'react-native';
+
+
+
+
+
+
+export default function App() {
+  const [count, setCount] = useState(0);
+  return (
+    <View style={styles.container}>
+      <StatusBar style="auto" />
+
+
+
+
+      <Button 
+        title= "Increase"
+        touchSoundDisabled 
+        onPress={() => {
+          setCount((pre) => pre + 1);
+        }}
+        color={"red"}
+      />
+
+/*Burada button ekledik ve title ını girdik.(button eklediğimizde title girmezsek kod hata verir)
+touchSoundDisabled(bu kod ile butona bastığımızda tıklama sesini yok ettik.
+onPress={() => {
+          setCount((pre) => pre + 1);   (Butona tıklanıldığı zaman setcount +1 artacak kodunu bu kısımda yazdırdık ayrıca burdaki pre dediklerimizde şu Increase e bastın ise("=>" iseyi bunula sağlıyoruz) +1 arttır. 
+*/
+
+      <Button
+        title="Decrease"
+        touchSoundDisabled
+        onPress={() => {
+          setCount((prev) => prev - 1);
+        }}
+        color={"green"}    
+      />
+
+/* burada da üstte uyguladığımızın tam tersi uygulama yaparak -1 koyuyoruz.
+
+*/
+
+      <Text style={{fontSize: 35 , color:"purple", fontWeight: "bold"}}> {count}  </Text> 
+
+/* sayaç olması için text ekledik sadece {count } yazmamız yeterliydi.Biz yine fontumuz belirginleşsin diye fontsize , fontweight ve color ekledik.
+*/
+
+
+    </View>
+
+
+
+
+
+
+
+
+
+
+
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
