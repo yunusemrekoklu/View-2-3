@@ -24,7 +24,7 @@ Bu uygulama ile aşağıdaki temel konular öğrenilir:
 
 ## 📹 Video ile Eşleşme
 
-📌 Bu örnek, [devArdo/React Native Dersleri - View](https://www.youtube.com/watch?v=kZnRRQC-zFA&list=PLkcIcaxfjelbSrGLKY4bKh4ppHC7IusKI&index=3) videosuna karşılık gelmektedir.
+📌 Bu örnek, [devArdo/React Native Dersleri - View+Button](https://www.youtube.com/watch?v=kZnRRQC-zFA&list=PLkcIcaxfjelbSrGLKY4bKh4ppHC7IusKI&index=3) videosuna karşılık gelmektedir.
 
 ---
 
